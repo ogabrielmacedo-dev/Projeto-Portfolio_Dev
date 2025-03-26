@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+.teste {
+	height: 100vh;
+}
+
 :root {
 	--red-primary: #e3646e;
 	--purple-primary: #bb72e9;
@@ -21,4 +25,40 @@
 	--font-asap: 'Asap', sans-serif;
 	--font-inconsolata: 'Inconsolata', sans-serif;
 	--font-maven-pro: 'Maven Pro', sans-serif;
+
+	--title-large: 800 56px/120% var(--font-asap);
+	--title-md: 900 24px/120% var(--font-asap);
+	--title-sm: 900 16px/120% var(--font-asap);
+
+	--subtitle: 600 20px/120% var(--font-inconsolata);
+
+	--text-md: 500 16px/140% var(--font-maven-pro);
+	--text-sm: 500 14px/140% var(--font-maven-pro);
+}
+
+body {
+	font: var(--text-md);
+	color: var(--gray-600);
+	background-color: var(--gray-200);
+	border: 1px red solid;
+}
+
+.container {
+	max-width: 1366px;
+	width: 100%;
+	margin: auto;
+}
+
+img {
+	width: 100%; /* Faz a imagem ocupar toda a largura disponível */
+	height: auto; /* Mantém a proporção original */
+	display: block; /* Remove espaços extras abaixo da imagem */
+}
+
+span {
+	color: var(--red-primary);
+}
+
+h1 {
+	color: var(--gray-600);
 }
